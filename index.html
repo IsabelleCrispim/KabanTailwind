@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/styleFinally.css">
+    <title>Kaban</title>
+</head>
+
+<body class="bg-blueBlue bg-opacity-20 ">
+    <h1 class="text-3xl flex justify-center p-6">Kaban</h1>
+    <div class="container">
+        <!--Drag-container-->
+        <ul class="drag-list flex items-start">
+            <!--drag-list-->
+            <!--BackLog column-->
+            <li class="drag-column bg-blueBlue bg-opacity-10 rounded mx-5 flex-grow overflow-y-hidden  flex-1">
+                <!--drag column-->
+                <!--header-->
+                <span class="py-24 text-center">
+                    <h2 class="text-orangeOrange text-4xl mx-10 my-5">BackLog</h2>
+                </span>
+                <!--BackLog-Content-->
+                <div id="backLog-content" class="overflow-y-auto max-h-72">
+                    <ul class="drag-item-list min-h-5" id="backlogList">
+                        <!--drag-item-list-->
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+
+
+                    </ul>
+                </div>
+
+                <!--Button-->
+                <div class="add-btn-group flex justify-between">
+                    <!--add-btn-group-->
+
+                    <div
+                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                        <!--plussign-->
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <div
+                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                        <!--add-btn solid-->
+                        <span>Save-Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                        
+                    </div>
+                </div>
+
+
+
+
+            </li>
+
+            <!--Progress-->
+            <li class="drag-column bg-blueBlue bg-opacity-10 rounded mx-5 flex-grow overflow-y-hidden  flex-1">
+                <!--drag column-->
+                <!--header-->
+                <span class="py-24 text-center">
+                    <h2 class="text-orangeOrange text-4xl mx-10 my-5">Progress</h2>
+                </span>
+                <!--BackLog-Content-->
+                <div id="progress-content" class="overflow-y-auto max-h-72">
+                    <ul class="drag-item-list min-h-5" id="progressList">
+                        <!--drag-item-list-->
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+
+
+                    </ul>
+                </div>
+
+                <!--Button-->
+                <!--add-btn-group-->
+                <div class="add-btn-group flex justify-between">
+                    <div
+                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                        <!--plussign-->
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <!--add-btn solid-->
+                    <div
+                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                        <span>Save-Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                        
+                    </div>
+            </li>
+
+            <!--Complete-->
+            <li class="drag-column bg-blueBlue bg-opacity-10 rounded mx-5 flex-grow overflow-y-hidden  flex-1">
+                <!--drag column-->
+                <!--header-->
+                <span class="py-24 text-center">
+                    <h2 class="text-orangeOrange text-4xl mx-10 my-5">Complete</h2>
+                </span>
+                <!--BackLog-Content-->
+                <div id="complete-content" class="overflow-y-auto max-h-72">
+                    <ul class="drag-item-list min-h-5" id="completeList">
+                        <!--drag-item-list-->
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+
+
+                    </ul>
+                </div>
+
+                <!--Button-->
+                <!--add-btn-group-->
+                <div class="add-btn-group flex justify-between">
+                    <div
+                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                        <!--plussign-->
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <!--add-btn solid-->
+                    <div
+                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                        <span>Save-Item</span>
+                    </div>
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                        
+                    </div>
+            </li>
+
+            <!--On Hold-->
+            <li class="drag-column bg-blueBlue bg-opacity-10 rounded mx-5 flex-grow overflow-y-hidden  flex-1">
+                <!--drag column-->
+                <!--header-->
+                <span class="py-24 text-center">
+                    <h2 class="text-orangeOrange text-4xl mx-10 my-5">On Hold</h2>
+                </span>
+                <!--BackLog-Content-->
+                <div id="onHold-content" class="overflow-y-auto max-h-72">
+                    <ul class="drag-item-list min-h-5" id="onHoldList">
+                        <!--drag-item-list-->
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+                        <li
+                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
+                            Testing</li>
+
+
+                    </ul>
+                </div>
+
+                <!--Button-->
+                <!--add-btn-group-->
+                <div class="add-btn-group flex justify-between">
+                    <div
+                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                        <!--plussign-->
+                        <span class="plus-sign">+</span>
+                        <span>Add Item</span>
+                    </div>
+                    <!--add-btn solid-->
+                    <div
+                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                        <span>Save-Item</span>
+                    </div>
+
+                    <div class="add-container">
+                        <div class="add-item"></div>
+                        
+                    </div>
+                    
+                    
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
