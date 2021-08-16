@@ -25,19 +25,9 @@
                 </span>
                 <!--BackLog-Content-->
                 <div id="backLog-content" class="overflow-y-auto max-h-72">
-                    <ul class="drag-item-list min-h-5" id="backlogList">
+                    <ul class="drag-item-list min-h-5" id="backlogList" ondrop="drop(event)"
+                        ondragover="allowDrop(event)" ondragenter="dragEnter(0)">
                         <!--drag-item-list-->
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-
-
                     </ul>
                 </div>
 
@@ -45,26 +35,22 @@
                 <div class="add-btn-group flex justify-between">
                     <!--add-btn-group-->
 
-                    <div
-                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                    <div class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50"
+                        onclick="showInputBox(0)">
                         <!--plussign-->
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                    <div
-                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                    <div class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 hidden"
+                        onclick="hideInputBox(0)">
                         <!--add-btn solid-->
                         <span>Save-Item</span>
                     </div>
-                    <div class="add-container">
-                        <div class="add-item"></div>
-
+                </div>
+                <div class="add-container m-3 px-2 py-4 rounded bg-gray-50 min-h-5 hidden">
+                    <div class="add-item w-100 min-h-5 h-auto bg-white rounded mx-3 my-auto resize-none text-black p-3" contenteditable="true">
                     </div>
                 </div>
-
-
-
-
             </li>
 
             <!--Progress-->
@@ -76,85 +62,69 @@
                 </span>
                 <!--BackLog-Content-->
                 <div id="progress-content" class="overflow-y-auto max-h-72">
-                    <ul class="drag-item-list min-h-5" id="progressList">
+                    <ul class="drag-item-list min-h-5" id="progressList" ondrop="drop(event)"
+                        ondragover="allowDrop(event)" ondragenter="dragEnter(1)">
                         <!--drag-item-list-->
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-
-
                     </ul>
                 </div>
 
                 <!--Button-->
                 <!--add-btn-group-->
                 <div class="add-btn-group flex justify-between">
-                    <div
-                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                    <div class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50"
+                        onclick="showInputBox(1)">
                         <!--plussign-->
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
                     <!--add-btn solid-->
-                    <div
-                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                    <div class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 hidden"
+                        onclick="hideInputBox(1)">
                         <span>Save-Item</span>
                     </div>
-                    <div class="add-container">
-                        <div class="add-item"></div>
 
+                </div>
+                <div class="add-container m-3 px-2 py-4 rounded bg-gray-50 min-h-5 hidden" >
+                    <div class="add-item w-100 min-h-5 h-auto bg-white rounded mx-3 my-auto resize-none text-black p-3" contenteditable="true">
                     </div>
+                </div>
             </li>
 
-            <!--Complete-->
+            <!--Complete column-->
             <li class="drag-column bg-blueBlue bg-opacity-10 rounded mx-5 flex-grow overflow-y-hidden  flex-1">
                 <!--drag column-->
                 <!--header-->
                 <span class="py-24 text-center">
                     <h2 class="text-orangeOrange text-4xl mx-10 my-5">Complete</h2>
                 </span>
-                <!--BackLog-Content-->
+                <!--Complete-Content-->
                 <div id="complete-content" class="overflow-y-auto max-h-72">
-                    <ul class="drag-item-list min-h-5" id="completeList">
+                    <ul class="drag-item-list min-h-5" id="completeList" ondrop="drop(event)"
+                        ondragover="allowDrop(event)" ondragenter="dragEnter(2)">
                         <!--drag-item-list-->
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-
-
                     </ul>
                 </div>
 
                 <!--Button-->
-                <!--add-btn-group-->
                 <div class="add-btn-group flex justify-between">
-                    <div
-                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                    <!--add-btn-group-->
+
+                    <div class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50"
+                        onclick="showInputBox(2)">
                         <!--plussign-->
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
-                    <!--add-btn solid-->
-                    <div
-                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                    <div class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 hidden"
+                        onclick="hideInputBox(2)">
+                        <!--add-btn solid-->
                         <span>Save-Item</span>
                     </div>
-                    <div class="add-container">
-                        <div class="add-item"></div>
-
+                </div>
+                <div class="add-container m-3 px-2 py-4 rounded bg-gray-50 min-h-5 hidden">
+                    <div class="add-item w-100 min-h-5 h-auto bg-white rounded mx-3 my-auto resize-none text-black p-3" contenteditable="true">
                     </div>
+                </div>
             </li>
 
             <!--On Hold-->
@@ -166,43 +136,31 @@
                 </span>
                 <!--BackLog-Content-->
                 <div id="onHold-content" class="overflow-y-auto max-h-72">
-                    <ul class="drag-item-list min-h-5" id="onHoldList">
+                    <ul class="drag-item-list min-h-5" id="onHoldList" ondrop="drop(event)"
+                        ondragover="allowDrop(event)" ondragenter="dragEnter(3)">
                         <!--drag-item-list-->
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-                        <li
-                            class="m-3 p-3 bg-yellowyellow bg-opacity-45 text-darkdark leading-6 font-semibold h-fit cursor-pointer rounded  tracking-tighter">
-                            Testing</li>
-
-
                     </ul>
                 </div>
 
                 <!--Button-->
                 <!--add-btn-group-->
                 <div class="add-btn-group flex justify-between">
-                    <div
-                        class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50">
+                    <div class="add-btn m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50"
+                        onclick="showInputBox(3)">
                         <!--plussign-->
                         <span class="plus-sign">+</span>
                         <span>Add Item</span>
                     </div>
                     <!--add-btn solid-->
-                    <div
-                        class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 ">
+                    <div class="add-btn-save m-3 px-4 flex items-center cursor pointer w-fit rounded-md select-none transition-all  hover:bg-gray-50 hidden"
+                        onclick="hideInputBox(3)">
                         <span>Save-Item</span>
                     </div>
-
-                    <div class="add-container">
-                        <div class="add-item"></div>
-
+                </div>
+                <div class="add-container m-3 px-2 py-4 rounded bg-gray-50 min-h-5 hidden">
+                    <div class="add-item w-100 min-h-5 h-auto bg-white rounded mx-3 my-auto resize-none text-black p-3" contenteditable="true">
                     </div>
-
-
+                </div>
             </li>
         </ul>
     </div>
